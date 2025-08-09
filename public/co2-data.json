@@ -1,0 +1,6 @@
+[
+  {"id":"c-001","entity":"Contoso Energy","category":"company","sector":"Energy","year":2023,"emissions":1250000,"unit":"tCO2e","source":"Fiktiv"},
+  {"id":"c-002","entity":"Fabrik AG","category":"company","sector":"Manufacturing","year":2023,"emissions":420000,"unit":"tCO2e","source":"Fiktiv"},
+  {"id":"ct-CH","entity":"Schweiz","category":"country","year":2023,"emissions":35000000,"unit":"tCO2e","source":"Fiktiv"},
+  {"id":"ct-DE","entity":"Deutschland","category":"country","year":2023,"emissions":640000000,"unit":"tCO2e","source":"Fiktiv"}
+]
