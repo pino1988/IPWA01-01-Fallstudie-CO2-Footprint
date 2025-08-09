@@ -1,21 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed } from 'vue'
 
-const active = ref<'home' | 'data' | 'about'>('home')
+const isRtl = computed(() => {
+  if (typeof window === 'undefined') return false
+  return document.documentElement.dir === 'rtl'
+})
 </script>
 
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom fixed-top">
       <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <!-- Platzhalter-Logo -->
-          <span class="d-inline-block rounded-circle bg-success" style="width:24px;height:24px;"></span>
+
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img src="/vite.svg" alt="Logo" width="30" height="30" class="me-2" />
           <span>CO<sub>2</sub>-Footprint</span>
         </a>
 
-        <!-- Mobile Toggler -->
+        <!-- Toggler -->
         <button
           class="navbar-toggler"
           type="button"
@@ -23,31 +26,29 @@ const active = ref<'home' | 'data' | 'about'>('home')
           data-bs-target="#mainNav"
           aria-controls="mainNav"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Nav -->
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Collapse nav -->
+        <div
+          id="mainNav"
+          class="collapse navbar-collapse"
+          :class="isRtl ? 'justify-content-end' : 'justify-content-start'"
+        >
+          <ul class="navbar-nav mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" :class="{ active: active==='home' }" href="#">Start</a>
+              <a class="nav-link active" href="#home" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" :class="{ active: active==='data' }" href="#">Daten</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" :class="{ active: active==='about' }" href="#">Methodik</a>
+              <a class="nav-link" href="#data">Daten</a>
             </li>
           </ul>
         </div>
+
       </div>
     </nav>
   </header>
 </template>
 
-<style scoped>
-.navbar-toggler {
-  border: none;
-}
-</style>

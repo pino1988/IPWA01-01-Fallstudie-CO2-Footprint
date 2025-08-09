@@ -8,3 +8,5 @@ export interface Co2Record {
   unit: 'tCO2e';
   source?: string;
 }
+
+export type SortKey = 'entity' | 'category' | 'sector' | 'year' | 'emissions';
