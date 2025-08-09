@@ -1,10 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
-const isRtl = computed(() => {
-  if (typeof window === 'undefined') return false
-  return document.documentElement.dir === 'rtl'
-})
 </script>
 
 <template>
@@ -32,12 +26,8 @@ const isRtl = computed(() => {
         </button>
 
         <!-- Collapse nav -->
-        <div
-          id="mainNav"
-          class="collapse navbar-collapse"
-          :class="isRtl ? 'justify-content-end' : 'justify-content-start'"
-        >
-          <ul class="navbar-nav mb-2 mb-md-0">
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link active" href="#home" aria-current="page">Home</a>
             </li>
@@ -51,4 +41,3 @@ const isRtl = computed(() => {
     </nav>
   </header>
 </template>
-
