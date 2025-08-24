@@ -4,7 +4,7 @@
       <small>&copy; {{ new Date().getFullYear() }} Climate Transparency NPO</small>
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link px-2" href="#impressum">Impressum</a>
+          <a class="nav-link px-2" href="#imprint">Impressum</a>
         </li>
         <li class="nav-item">
           <a class="nav-link px-2" href="#datenschutz">Datenschutz</a>
