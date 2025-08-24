@@ -7,10 +7,10 @@
       <div class="container-fluid">
 
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="#home">
+        <router-link class="navbar-brand d-flex align-items-center" to="/">
           <img src="/vite.svg" alt="Logo" width="30" height="30" class="me-2" />
           <span>CO<sub>2</sub>-Footprint</span>
-        </a>
+        </router-link>
 
         <!-- Toggler -->
         <button
@@ -29,10 +29,10 @@
         <div id="mainNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#home" aria-current="page">Home</a>
+              <router-link class="nav-link" to="/" aria-current="page">Home</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#data">Daten</a>
+              <router-link class="nav-link" to="/#data">Daten</router-link>
             </li>
           </ul>
         </div>
