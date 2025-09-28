@@ -2,13 +2,13 @@
   <section class="container pt-5 mt-5">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <h2 class="h3 mb-3">Imprint</h2>
+        <h2 class="h3 mb-3">Impressum</h2>
 
         <address class="mb-4">
           <strong>Climate Transparency NPO</strong><br>
-          Sample Street 12<br>
-          12345 Sample City<br>
-          Germany
+          Musterstrasse 123<br>
+          6000 Luzern<br>
+          Schweiz
         </address>
 
         <ul class="list-unstyled small">
