@@ -8,7 +8,7 @@
 
         <!-- Brand -->
         <router-link class="navbar-brand d-flex align-items-center" to="/">
-          <img src="/vite.svg" alt="Logo" width="30" height="30" class="me-2" />
+          <img src="/logo.svg" alt="Logo" width="30" height="30" class="me-2" />
           <span>CO<sub>2</sub>-Footprint</span>
         </router-link>
 

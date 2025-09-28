@@ -40,6 +40,9 @@ const filtered = computed(() => {
   })
 })
 
+
+
+
 const sorted = computed(() => {
   const arr = [...filtered.value]
   arr.sort((a, b) => {
