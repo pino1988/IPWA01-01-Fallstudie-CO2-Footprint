@@ -13,15 +13,8 @@
         </router-link>
 
         <!-- Toggler -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -29,10 +22,14 @@
         <div id="mainNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <router-link class="nav-link" to="/" aria-current="page">Home</router-link>
+              <router-link class="nav-link" to="/" aria-current="page">
+                Home
+              </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="{ path: '/', hash: '#data'}">Daten</router-link>
+              <router-link class="nav-link" :to="{ path: '/', hash: '#data' }">
+                Daten
+              </router-link>
             </li>
           </ul>
         </div>

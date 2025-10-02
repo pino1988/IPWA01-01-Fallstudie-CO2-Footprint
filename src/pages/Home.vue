@@ -6,13 +6,15 @@ import CO2Table from '../components/CO2Table.vue'
 <template>
   <div class="row">
     <aside class="d-none d-md-block col-md-3">
-      <LocalMenu />
+      <div class="position-sticky" style="top: 90px;">
+        <LocalMenu />
+      </div>
     </aside>
-
     <section class="col-12 col-md-9">
       <div class="card shadow-sm">
         <div class="card-body">
-          <h1 id="intro" class="h3 mb-3">Einführung</h1>
+          <h1 id="intro" class="h3 mb-3">
+            Einführung</h1>
           <p>
             Der Klimawandel zählt zu den zentralen Herausforderungen unserer Zeit und betrifft Politik,
             Wirtschaft und Gesellschaft gleichermaßen. Eine wirksame Auseinandersetzung mit diesem Thema
@@ -25,10 +27,16 @@ import CO2Table from '../components/CO2Table.vue'
             Erfassung und Vergleichbarkeit zur Regulierung des CO₂-Ausstoßes beizutragen und eine
             kontinuierliche Reduktion zu unterstützen.
           </p>
-          <h2 id="data" class="h4 mt-4">CO<sub>2</sub>-Emissionsdaten</h2>
         </div>
       </div>
-      <CO2Table />
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 id="data" class="h3 mb-3">
+            CO<sub>2</sub>-Emissionsdaten
+          </h2>
+          <CO2Table />
+        </div>
+      </div>
     </section>
   </div>
 </template>
